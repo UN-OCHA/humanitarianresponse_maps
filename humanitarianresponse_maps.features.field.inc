@@ -299,7 +299,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '8',
+        'weight' => '6',
       ),
     ),
   );
@@ -369,7 +369,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -439,19 +439,19 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
 
-  // Exported field: 'node-map-field_highlight'
-  $fields['node-map-field_highlight'] = array(
+  // Exported field: 'node-map-field_map_coordination_hub'
+  $fields['node-map-field_map_coordination_hub'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_highlight',
+      'field_name' => 'field_map_coordination_hub',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -469,7 +469,7 @@ function humanitarianresponse_maps_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'highlights',
+            'vocabulary' => 'coordination_hubs',
             'parent' => '0',
           ),
         ),
@@ -488,7 +488,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 6,
+          'weight' => 9,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -498,8 +498,8 @@ function humanitarianresponse_maps_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_highlight',
-      'label' => 'Highlight',
+      'field_name' => 'field_map_coordination_hub',
+      'label' => 'Coordination hubs',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -660,7 +660,7 @@ function humanitarianresponse_maps_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Cluster');
-  t('Highlight');
+  t('Coordination hubs');
   t('Language');
   t('Map file');
   t('Source');

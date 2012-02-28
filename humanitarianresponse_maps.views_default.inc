@@ -158,6 +158,72 @@ function humanitarianresponse_maps_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['path'] = 'maps/maps';
+
+  /* Display: Cluster */
+  $handler = $view->new_display('panel_pane', 'Cluster', 'panel_pane_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Cluster (field_cluster) */
+  $handler->display->display_options['arguments']['field_cluster_tid']['id'] = 'field_cluster_tid';
+  $handler->display->display_options['arguments']['field_cluster_tid']['table'] = 'field_data_field_cluster';
+  $handler->display->display_options['arguments']['field_cluster_tid']['field'] = 'field_cluster_tid';
+  $handler->display->display_options['arguments']['field_cluster_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_cluster_tid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['field_cluster_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_cluster_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_cluster_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_cluster_tid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['field_cluster_tid']['not'] = 0;
+  $handler->display->display_options['pane_category']['name'] = 'Maps';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['argument_input'] = array(
+    'field_cluster_tid' => array(
+      'type' => 'panel',
+      'context' => 'entity:comment.author',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Cluster (field_cluster)',
+    ),
+  );
+
+  /* Display: Coordination hub */
+  $handler = $view->new_display('panel_pane', 'Coordination hub', 'panel_pane_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Coordination hubs (field_map_coordination_hub) */
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['id'] = 'field_map_coordination_hub_tid';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['table'] = 'field_data_field_map_coordination_hub';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['field'] = 'field_map_coordination_hub_tid';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['field_map_coordination_hub_tid']['not'] = 0;
+  $handler->display->display_options['pane_category']['name'] = 'Maps';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['argument_input'] = array(
+    'field_map_coordination_hub_tid' => array(
+      'type' => 'panel',
+      'context' => 'entity:comment.author',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Coordination hubs (field_map_coordination_hub)',
+    ),
+  );
   $translatables['maps_view'] = array(
     t('Master'),
     t('Maps'),
@@ -172,6 +238,9 @@ function humanitarianresponse_maps_views_default_views() {
     t('Offset'),
     t('There is no data with the selected criteria.'),
     t('Page'),
+    t('Cluster'),
+    t('All'),
+    t('Coordination hub'),
   );
   $export['maps_view'] = $view;
 
