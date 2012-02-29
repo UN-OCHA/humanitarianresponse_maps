@@ -111,30 +111,6 @@ function humanitarianresponse_maps_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_doc_thumbnail']['field_api_classes'] = 0;
-  /* Field: Content: Source */
-  $handler->display->display_options['fields']['field_docs_source']['id'] = 'field_docs_source';
-  $handler->display->display_options['fields']['field_docs_source']['table'] = 'field_data_field_docs_source';
-  $handler->display->display_options['fields']['field_docs_source']['field'] = 'field_docs_source';
-  $handler->display->display_options['fields']['field_docs_source']['label'] = '';
-  $handler->display->display_options['fields']['field_docs_source']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_docs_source']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_docs_source']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_docs_source']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_docs_source']['field_api_classes'] = 0;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -269,7 +245,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    79 => '79',
+    81 => '81',
   );
   $handler->display->display_options['filters']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['filters']['tid']['type'] = 'select';
