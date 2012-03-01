@@ -417,7 +417,7 @@ function humanitarianresponse_maps_field_default_fields() {
       'settings' => array(
         'description_field' => 0,
         'file_directory' => '',
-        'file_extensions' => 'pdf',
+        'file_extensions' => 'pdf jpg',
         'max_filesize' => '',
         'user_register_form' => FALSE,
       ),
