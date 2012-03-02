@@ -24,6 +24,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Maps';
   $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -133,10 +134,13 @@ function humanitarianresponse_maps_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['path'] = 'maps/maps';
 
   /* Display: Cluster */
   $handler = $view->new_display('panel_pane', 'Cluster', 'panel_pane_1');
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'page_3';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -180,6 +184,8 @@ function humanitarianresponse_maps_views_default_views() {
 
   /* Display: Coordination hub */
   $handler = $view->new_display('panel_pane', 'Coordination hub', 'panel_pane_2');
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'page_3';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -225,6 +231,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler = $view->new_display('page', '3W', 'page_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Who What Where';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -312,6 +319,41 @@ function humanitarianresponse_maps_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_doc_thumbnail']['field_api_classes'] = 0;
+
+  /* Display: Maps Per Term */
+  $handler = $view->new_display('page', 'Maps Per Term', 'page_3');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Has taxonomy term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['title_enable'] = 1;
+  $handler->display->display_options['arguments']['tid']['title'] = '%1 Maps';
+  $handler->display->display_options['arguments']['tid']['breadcrumb_enable'] = 1;
+  $handler->display->display_options['arguments']['tid']['breadcrumb'] = '%1 Maps';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['term_page'] = 1;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['node'] = 0;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['limit'] = 0;
+  $handler->display->display_options['arguments']['tid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = 1;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
+    'clusters' => 'clusters',
+    'coordination_hubs' => 'coordination_hubs',
+  );
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = 0;
+  $handler->display->display_options['arguments']['tid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['tid']['add_table'] = 0;
+  $handler->display->display_options['arguments']['tid']['require_value'] = 0;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
+  $handler->display->display_options['path'] = 'taxonomy/term/%/maps';
   $translatables['maps_view'] = array(
     t('Master'),
     t('Maps'),
@@ -334,6 +376,8 @@ function humanitarianresponse_maps_views_default_views() {
     t('Who What Where'),
     t('Home'),
     t('Latest Map'),
+    t('Maps Per Term'),
+    t('%1 Maps'),
   );
   $export['maps_view'] = $view;
 
