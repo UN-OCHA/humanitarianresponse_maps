@@ -44,6 +44,35 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['empty']['area']['content'] = 'There is no data with the selected criteria.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
+  /* Field: Content: Thumbnail */
+  $handler->display->display_options['fields']['field_doc_thumbnail']['id'] = 'field_doc_thumbnail';
+  $handler->display->display_options['fields']['field_doc_thumbnail']['table'] = 'field_data_field_doc_thumbnail';
+  $handler->display->display_options['fields']['field_doc_thumbnail']['field'] = 'field_doc_thumbnail';
+  $handler->display->display_options['fields']['field_doc_thumbnail']['label'] = '';
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['fields']['field_doc_thumbnail']['field_api_classes'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -84,35 +113,6 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['created']['empty_zero'] = 0;
   $handler->display->display_options['fields']['created']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['created']['date_format'] = 'medium';
-  /* Field: Content: Thumbnail */
-  $handler->display->display_options['fields']['field_doc_thumbnail']['id'] = 'field_doc_thumbnail';
-  $handler->display->display_options['fields']['field_doc_thumbnail']['table'] = 'field_data_field_doc_thumbnail';
-  $handler->display->display_options['fields']['field_doc_thumbnail']['field'] = 'field_doc_thumbnail';
-  $handler->display->display_options['fields']['field_doc_thumbnail']['label'] = '';
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['fields']['field_doc_thumbnail']['field_api_classes'] = 0;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
