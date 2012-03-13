@@ -25,6 +25,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['title'] = 'Maps';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -354,31 +355,6 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
   $handler->display->display_options['path'] = 'taxonomy/term/%/maps';
-  $translatables['maps_view'] = array(
-    t('Master'),
-    t('Maps'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('There is no data with the selected criteria.'),
-    t('Page'),
-    t('Cluster'),
-    t('All'),
-    t('View panes'),
-    t('Coordination hub'),
-    t('3W'),
-    t('Who What Where'),
-    t('Home'),
-    t('Latest Map'),
-    t('Maps Per Term'),
-    t('%1 Maps'),
-  );
   $export['maps_view'] = $view;
 
   return $export;
