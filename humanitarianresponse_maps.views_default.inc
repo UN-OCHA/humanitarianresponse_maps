@@ -41,8 +41,8 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'There is no data with the selected criteria.';
-  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['empty']['area']['content'] = 'There are no maps';
+  $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Field: Content: Thumbnail */
   $handler->display->display_options['fields']['field_doc_thumbnail']['id'] = 'field_doc_thumbnail';
