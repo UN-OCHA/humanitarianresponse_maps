@@ -15,14 +15,14 @@ function humanitarianresponse_maps_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Maps view';
+  $view->human_name = 'Visuals view';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Maps';
+  $handler->display->display_options['title'] = 'Visuals';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'View all';
@@ -41,7 +41,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no maps';
+  $handler->display->display_options['empty']['area']['content'] = 'There are no visuals';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Field: Content: Thumbnail */
@@ -136,7 +136,7 @@ function humanitarianresponse_maps_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['path'] = 'maps/maps';
+  $handler->display->display_options['path'] = 'visuals-data/visuals';
 
   /* Display: 3W */
   $handler = $view->new_display('page', '3W', 'page_2');
