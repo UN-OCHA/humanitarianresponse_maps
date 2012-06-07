@@ -48,4 +48,5 @@ features[variable][] = menu_parent_map
 features[variable][] = node_options_map
 features[variable][] = node_preview_map
 features[variable][] = node_submitted_map
+features[variable][] = pathauto_node_map_pattern
 features[views_view][] = maps_view

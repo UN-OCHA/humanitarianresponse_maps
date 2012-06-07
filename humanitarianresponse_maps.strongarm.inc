@@ -103,5 +103,12 @@ function humanitarianresponse_maps_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_map'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_map_pattern';
+  $strongarm->value = 'visuals/[node:title]';
+  $export['pathauto_node_map_pattern'] = $strongarm;
+
   return $export;
 }
