@@ -11,6 +11,7 @@ dependencies[] = humanitarianresponse_clusters
 dependencies[] = humanitarianresponse_coordination
 dependencies[] = humanitarianresponse_organizations
 dependencies[] = humanitarianresponse_themes
+dependencies[] = i18n_taxonomy
 dependencies[] = image
 dependencies[] = languagefield
 dependencies[] = options
