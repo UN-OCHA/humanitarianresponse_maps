@@ -10,7 +10,7 @@
 function humanitarianresponse_maps_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-map-body'
+  // Exported field: 'node-map-body'.
   $fields['node-map-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -82,7 +83,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_clusters'
+  // Exported field: 'node-map-field_clusters'.
   $fields['node-map-field_clusters'] = array(
     'field_config' => array(
       'active' => '1',
@@ -103,6 +104,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -111,6 +113,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -152,7 +155,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_coordination_hubs'
+  // Exported field: 'node-map-field_coordination_hubs'.
   $fields['node-map-field_coordination_hubs'] = array(
     'field_config' => array(
       'active' => '1',
@@ -173,6 +176,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -181,6 +185,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -222,7 +227,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_doc_thumbnail'
+  // Exported field: 'node-map-field_doc_thumbnail'.
   $fields['node-map-field_doc_thumbnail'] = array(
     'field_config' => array(
       'active' => '1',
@@ -243,6 +248,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -301,7 +307,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_file_languages'
+  // Exported field: 'node-map-field_file_languages'.
   $fields['node-map-field_file_languages'] = array(
     'field_config' => array(
       'active' => '1',
@@ -315,6 +321,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'languagefield',
       'settings' => array(
         'excluded_languages' => array(),
@@ -362,7 +369,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_locations'
+  // Exported field: 'node-map-field_locations'.
   $fields['node-map-field_locations'] = array(
     'field_config' => array(
       'active' => '1',
@@ -383,6 +390,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -391,6 +399,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -432,7 +441,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_map_file'
+  // Exported field: 'node-map-field_map_file'.
   $fields['node-map-field_map_file'] = array(
     'field_config' => array(
       'active' => '1',
@@ -453,6 +462,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -504,7 +514,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_map_type'
+  // Exported field: 'node-map-field_map_type'.
   $fields['node-map-field_map_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -525,6 +535,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -533,6 +544,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -574,7 +586,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_organizations'
+  // Exported field: 'node-map-field_organizations'.
   $fields['node-map-field_organizations'] = array(
     'field_config' => array(
       'active' => '1',
@@ -595,6 +607,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -603,6 +616,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -644,7 +658,7 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map-field_themes'
+  // Exported field: 'node-map-field_themes'.
   $fields['node-map-field_themes'] = array(
     'field_config' => array(
       'active' => '1',
@@ -665,6 +679,7 @@ function humanitarianresponse_maps_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -673,6 +688,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
