@@ -27,7 +27,7 @@ function humanitarianresponse_maps_views_api() {
 function humanitarianresponse_maps_node_info() {
   $items = array(
     'map' => array(
-      'name' => t('Map'),
+      'name' => t('Visual'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
