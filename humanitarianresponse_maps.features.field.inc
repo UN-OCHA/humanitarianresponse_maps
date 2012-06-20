@@ -928,6 +928,7 @@ function humanitarianresponse_maps_field_default_fields() {
   t('Cluster(s)');
   t('Coordination Hub(s)');
   t('Description');
+  t('If you can not find the proper type in this list, please contact your site manager.');
   t('Language(s)');
   t('Location');
   t('Map file');
