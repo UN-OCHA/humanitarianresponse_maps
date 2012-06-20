@@ -553,7 +553,7 @@ function humanitarianresponse_maps_field_default_fields() {
       'bundle' => 'map',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'If you can not find the proper type in this list, please contact your site manager.',
       'display' => array(
         'default' => array(
           'label' => 'above',
