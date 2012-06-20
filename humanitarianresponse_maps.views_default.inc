@@ -602,6 +602,33 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
   $handler->display->display_options['block_description'] = 'Maps per term';
+  $translatables['maps_view'] = array(
+    t('Master'),
+    t('Visuals'),
+    t('View all'),
+    t('Search'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('There are no visuals'),
+    t('Title'),
+    t('Type'),
+    t('Cluster'),
+    t('Date'),
+    t('Page'),
+    t('more'),
+    t('Home'),
+    t('Latest Map'),
+    t('View panes'),
+    t('Visuals Per Term'),
+    t('All'),
+    t('Block per term'),
+    t('Maps per term'),
+  );
   $export['maps_view'] = $view;
 
   return $export;
