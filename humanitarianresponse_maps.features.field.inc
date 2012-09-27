@@ -84,7 +84,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '3',
+        'weight' => '22',
       ),
     ),
   );
@@ -164,7 +164,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '2',
+        'weight' => '14',
       ),
     ),
   );
@@ -241,7 +241,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '10',
+        'weight' => '18',
       ),
     ),
   );
@@ -327,7 +327,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -407,7 +407,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '11',
+        'weight' => '20',
       ),
     ),
   );
@@ -420,6 +420,9 @@ function humanitarianresponse_maps_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_file_languages',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -432,7 +435,13 @@ function humanitarianresponse_maps_field_default_fields() {
         'excluded_languages' => array(),
         'groups' => '',
         'include_native' => 0,
-        'languages' => array(),
+        'languages' => array(
+          'ar' => 'ar',
+          'en' => 'en',
+          'es' => 'es',
+          'fr' => 'fr',
+          'ru' => 'ru',
+        ),
       ),
       'translatable' => '0',
       'type' => 'language_field',
@@ -474,8 +483,8 @@ function humanitarianresponse_maps_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '7',
+        'type' => 'options_buttons',
+        'weight' => '8',
       ),
     ),
   );
@@ -552,7 +561,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'hs_taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_hs',
-        'weight' => '6',
+        'weight' => '12',
       ),
     ),
   );
@@ -708,7 +717,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -782,10 +791,13 @@ function humanitarianresponse_maps_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '8',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
+        'weight' => '10',
       ),
     ),
   );
@@ -865,7 +877,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '9',
+        'weight' => '16',
       ),
     ),
   );

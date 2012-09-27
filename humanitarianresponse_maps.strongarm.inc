@@ -68,7 +68,7 @@ function humanitarianresponse_maps_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '12',
+          'weight' => '50',
         ),
       ),
       'display' => array(),
