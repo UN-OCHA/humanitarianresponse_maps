@@ -50,7 +50,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'ical' => array(
           'label' => 'above',
@@ -137,7 +137,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
+          'weight' => '10',
         ),
         'ical' => array(
           'label' => 'above',
@@ -214,7 +214,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '13',
         ),
         'ical' => array(
           'label' => 'above',
@@ -286,10 +286,10 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'medium',
           ),
           'type' => 'image',
-          'weight' => 8,
+          'weight' => '8',
         ),
         'ical' => array(
           'label' => 'above',
@@ -380,7 +380,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 17,
+          'weight' => '17',
         ),
         'ical' => array(
           'label' => 'above',
@@ -457,7 +457,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'languagefield',
           'settings' => array(),
           'type' => 'language_default',
-          'weight' => 14,
+          'weight' => '14',
         ),
         'ical' => array(
           'label' => 'above',
@@ -489,6 +489,98 @@ function humanitarianresponse_maps_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-map-field_linked_resources'.
+  $fields['node-map-field_linked_resources'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_linked_resources',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'map',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '18',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_linked_resources',
+      'label' => 'Linked Resources',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'user',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '24',
+      ),
+    ),
+  );
+
   // Exported field: 'node-map-field_locations'.
   $fields['node-map-field_locations'] = array(
     'field_config' => array(
@@ -497,6 +589,9 @@ function humanitarianresponse_maps_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_locations',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -534,7 +629,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 15,
+          'weight' => '15',
         ),
         'ical' => array(
           'label' => 'above',
@@ -607,7 +702,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'ical' => array(
           'label' => 'above',
@@ -690,7 +785,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 2,
+          'weight' => '2',
         ),
         'ical' => array(
           'label' => 'above',
@@ -767,7 +862,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 11,
+          'weight' => '11',
         ),
         'ical' => array(
           'label' => 'above',
@@ -850,7 +945,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 12,
+          'weight' => '12',
         ),
         'ical' => array(
           'label' => 'above',
@@ -924,7 +1019,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 16,
+          'weight' => '16',
         ),
         'ical' => array(
           'label' => 'above',
@@ -1101,6 +1196,7 @@ function humanitarianresponse_maps_field_default_fields() {
   t('Emergencies');
   t('If you can not find the proper type in this list, please contact your site manager.');
   t('Language(s)');
+  t('Linked Resources');
   t('Location');
   t('Map file');
   t('Name');

@@ -35,6 +35,10 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Search';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
@@ -141,7 +145,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'square_thumbnail',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -149,8 +153,8 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '100';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
@@ -214,8 +218,8 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_plugin'] = 'views_column_class';
+  $handler->display->display_options['style_options']['row_class'] = 'grid-4';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -229,7 +233,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'square_thumbnail',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -237,8 +241,8 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '100';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
@@ -353,7 +357,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'media_responsive_widest',
     'image_link' => 'content',
   );
   $handler->display->display_options['block_description'] = 'Home Map';

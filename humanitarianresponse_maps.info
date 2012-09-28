@@ -29,6 +29,7 @@ features[field][] = node-map-field_coordination_hubs
 features[field][] = node-map-field_doc_thumbnail
 features[field][] = node-map-field_emergencies
 features[field][] = node-map-field_file_languages
+features[field][] = node-map-field_linked_resources
 features[field][] = node-map-field_locations
 features[field][] = node-map-field_map_file
 features[field][] = node-map-field_map_type
