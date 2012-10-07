@@ -357,7 +357,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_doc_thumbnail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_doc_thumbnail']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_doc_thumbnail']['settings'] = array(
-    'image_style' => 'media_responsive_widest',
+    'image_style' => 'resp_img__grid_4_with_margin',
     'image_link' => 'content',
   );
   $handler->display->display_options['block_description'] = 'Home Map';
