@@ -6,6 +6,7 @@ php = 5.2.4
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = file
+dependencies[] = file_formatters
 dependencies[] = hs_taxonomy
 dependencies[] = humanitarianresponse_clusters
 dependencies[] = humanitarianresponse_coordination

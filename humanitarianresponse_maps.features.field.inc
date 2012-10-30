@@ -699,9 +699,11 @@ function humanitarianresponse_maps_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'file',
-          'settings' => array(),
-          'type' => 'file_default',
+          'module' => 'file_formatters',
+          'settings' => array(
+            'format_custom_link_text' => 'Download',
+          ),
+          'type' => 'file_custom_link',
           'weight' => '1',
         ),
         'ical' => array(
