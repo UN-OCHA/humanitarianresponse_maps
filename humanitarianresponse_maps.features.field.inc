@@ -432,7 +432,13 @@ function humanitarianresponse_maps_field_default_fields() {
       'locked' => '0',
       'module' => 'languagefield',
       'settings' => array(
+        'enabled' => '1',
         'excluded_languages' => array(),
+        'format' => array(
+          'iso' => 0,
+          'name' => 'name',
+          'name_native' => 0,
+        ),
         'groups' => '',
         'include_native' => 0,
         'languages' => array(
@@ -455,7 +461,11 @@ function humanitarianresponse_maps_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'languagefield',
-          'settings' => array(),
+          'settings' => array(
+            'format' => array(
+              'name' => 'name',
+            ),
+          ),
           'type' => 'language_default',
           'weight' => '14',
         ),
