@@ -458,7 +458,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
   $handler->display->display_options['fields']['field_emergencies']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_emergencies']['delta_offset'] = '0';
-  $handler->display->display_options['path'] = 'visuals-data/visuals/xls';
+  $handler->display->display_options['path'] = 'visuals-data/visuals.xls';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
     'default' => 0,
