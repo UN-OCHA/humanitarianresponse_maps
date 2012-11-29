@@ -92,11 +92,11 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_map_type']['table'] = 'field_data_field_map_type';
   $handler->display->display_options['fields']['field_map_type']['field'] = 'field_map_type';
   $handler->display->display_options['fields']['field_map_type']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Cluster(s) */
+  /* Field: Content: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['label'] = 'Cluster';
+  $handler->display->display_options['fields']['field_clusters']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
@@ -179,13 +179,13 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'map' => 'map',
   );
-  /* Filter criterion: Content: Cluster(s) (field_clusters) */
+  /* Filter criterion: Content: Clusters (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator_id'] = 'field_clusters_tid_op';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Cluster';
+  $handler->display->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator'] = 'field_clusters_tid_op';
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
@@ -433,11 +433,11 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_locations']['field'] = 'field_locations';
   $handler->display->display_options['fields']['field_locations']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
-  /* Field: Content: Cluster(s) */
+  /* Field: Content: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['label'] = 'Cluster';
+  $handler->display->display_options['fields']['field_clusters']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
   /* Field: Content: Themes */
   $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
