@@ -445,7 +445,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['field'] = 'field_themes';
   $handler->display->display_options['fields']['field_themes']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_themes']['delta_offset'] = '0';
-  /* Field: Content: Coordination Hub(s) */
+  /* Field: Content: Coordination Hub */
   $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'field_data_field_coordination_hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';

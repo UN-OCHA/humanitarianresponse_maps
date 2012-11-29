@@ -228,7 +228,7 @@ function humanitarianresponse_maps_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_coordination_hubs',
-      'label' => 'Coordination Hub(s)',
+      'label' => 'Coordination Hub',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1316,7 +1316,7 @@ function humanitarianresponse_maps_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Clusters');
-  t('Coordination Hub(s)');
+  t('Coordination Hub');
   t('Description');
   t('Emergencies');
   t('If you can not find the proper type in this list, please contact your site manager.');
