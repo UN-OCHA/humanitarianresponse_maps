@@ -18,9 +18,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Cluster';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
@@ -34,9 +34,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Coordination Hub';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
@@ -50,9 +50,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Emergencies';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
@@ -66,9 +66,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Location';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
@@ -82,9 +82,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Source';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
@@ -98,9 +98,9 @@ function humanitarianresponse_maps_feeds_tamper_default() {
   $feeds_tamper->source = 'Themes';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => ';',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => ';',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
