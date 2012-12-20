@@ -935,7 +935,7 @@ function humanitarianresponse_maps_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_map_type',
-      'label' => 'Type',
+      'label' => 'Map Type',
       'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1444,7 +1444,7 @@ function humanitarianresponse_maps_field_default_fields() {
   t('Theme(s)');
   t('Thumbnail');
   t('Title');
-  t('Type');
+  t('Map Type');
 
   return $fields;
 }
