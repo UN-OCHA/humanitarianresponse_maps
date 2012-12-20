@@ -10,6 +10,7 @@ dependencies[] = features
 dependencies[] = feeds_tamper
 dependencies[] = file
 dependencies[] = file_formatters
+dependencies[] = filefield_sources
 dependencies[] = hs_taxonomy
 dependencies[] = humanitarianresponse_clusters
 dependencies[] = humanitarianresponse_coordination

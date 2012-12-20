@@ -96,7 +96,6 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
@@ -441,7 +440,6 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
   /* Field: Content: Themes */
   $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
@@ -453,7 +451,6 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'field_data_field_coordination_hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
-  $handler->display->display_options['fields']['field_coordination_hubs']['label'] = 'Coordination Hub';
   $handler->display->display_options['fields']['field_coordination_hubs']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_coordination_hubs']['delta_offset'] = '0';
   /* Field: Content: Emergencies */
@@ -489,7 +486,7 @@ function humanitarianresponse_maps_views_default_views() {
     t('There are no visuals'),
     t('Title'),
     t('Type'),
-    t('Cluster'),
+    t('Clusters'),
     t('Date'),
     t('Page'),
     t('more'),
