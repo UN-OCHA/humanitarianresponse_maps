@@ -304,7 +304,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['path'] = 'taxonomy/term/%/visuals';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Visuals';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['weight'] = '6';
   $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Block per term */
