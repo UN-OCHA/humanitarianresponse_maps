@@ -87,7 +87,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Type */
+  /* Field: Content: Map Type */
   $handler->display->display_options['fields']['field_map_type']['id'] = 'field_map_type';
   $handler->display->display_options['fields']['field_map_type']['table'] = 'field_data_field_map_type';
   $handler->display->display_options['fields']['field_map_type']['field'] = 'field_map_type';
@@ -189,7 +189,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
-  /* Filter criterion: Content: Type (field_map_type) */
+  /* Filter criterion: Content: Map Type (field_map_type) */
   $handler->display->display_options['filters']['field_map_type_tid']['id'] = 'field_map_type_tid';
   $handler->display->display_options['filters']['field_map_type_tid']['table'] = 'field_data_field_map_type';
   $handler->display->display_options['filters']['field_map_type_tid']['field'] = 'field_map_type_tid';
@@ -279,7 +279,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'map' => 'map',
   );
-  /* Filter criterion: Content: Type (field_map_type) */
+  /* Filter criterion: Content: Map Type (field_map_type) */
   $handler->display->display_options['filters']['field_map_type_tid']['id'] = 'field_map_type_tid';
   $handler->display->display_options['filters']['field_map_type_tid']['table'] = 'field_data_field_map_type';
   $handler->display->display_options['filters']['field_map_type_tid']['field'] = 'field_map_type_tid';
@@ -388,7 +388,7 @@ function humanitarianresponse_maps_views_default_views() {
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
-  /* Field: Content: Type */
+  /* Field: Content: Map Type */
   $handler->display->display_options['fields']['field_map_type']['id'] = 'field_map_type';
   $handler->display->display_options['fields']['field_map_type']['table'] = 'field_data_field_map_type';
   $handler->display->display_options['fields']['field_map_type']['field'] = 'field_map_type';
@@ -485,11 +485,12 @@ function humanitarianresponse_maps_views_default_views() {
     t('last »'),
     t('There are no visuals'),
     t('Title'),
-    t('Type'),
+    t('Map Type'),
     t('Clusters'),
     t('Date'),
     t('Page'),
     t('more'),
+    t('Type'),
     t('Visuals Per Term'),
     t('All'),
     t('Block per term'),

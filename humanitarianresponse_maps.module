@@ -5,3 +5,10 @@
  */
 
 include_once('humanitarianresponse_maps.features.inc');
+
+/**
+ * Implements hook_cron()
+ */
+function humanitarianresponse_maps_cron() {
+  humanitarianresponse_core_feeds_check('csv_map_types', 'http://terms.humanitarianresponse.info/map-types.csv');
+}
