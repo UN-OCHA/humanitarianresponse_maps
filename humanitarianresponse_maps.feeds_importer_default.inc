@@ -113,7 +113,7 @@ function humanitarianresponse_maps_feeds_importer_default() {
           ),
           1 => array(
             'source' => 'Title',
-            'target' => 'title_field',
+            'target' => 'title_field:et:en',
             'unique' => FALSE,
           ),
           2 => array(
@@ -132,36 +132,41 @@ function humanitarianresponse_maps_feeds_importer_default() {
             'unique' => FALSE,
           ),
           5 => array(
+            'source' => 'Thumbnail',
+            'target' => 'field_doc_thumbnail',
+            'unique' => FALSE,
+          ),
+          6 => array(
             'source' => 'Publication Date',
             'target' => 'field_publication_date:start',
             'unique' => FALSE,
           ),
-          6 => array(
+          7 => array(
             'source' => 'Source',
             'target' => 'field_organizations',
             'unique' => FALSE,
           ),
-          7 => array(
+          8 => array(
             'source' => 'Location',
             'target' => 'field_locations',
             'unique' => FALSE,
           ),
-          8 => array(
+          9 => array(
             'source' => 'Cluster',
             'target' => 'field_clusters',
             'unique' => FALSE,
           ),
-          9 => array(
+          10 => array(
             'source' => 'Themes',
             'target' => 'field_themes',
             'unique' => FALSE,
           ),
-          10 => array(
+          11 => array(
             'source' => 'Coordination Hub',
             'target' => 'field_coordination_hubs',
             'unique' => FALSE,
           ),
-          11 => array(
+          12 => array(
             'source' => 'Emergencies',
             'target' => 'field_emergencies',
             'unique' => FALSE,
