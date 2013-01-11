@@ -286,7 +286,7 @@ function humanitarianresponse_maps_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'map',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Upload preferably squared thumbnails',
       'display' => array(
         'default' => array(
           'label' => 'above',
