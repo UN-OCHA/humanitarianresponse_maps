@@ -14,7 +14,7 @@ function humanitarianresponse_maps_user_default_permissions() {
   $permissions['create map content'] = array(
     'name' => 'create map content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -23,7 +23,7 @@ function humanitarianresponse_maps_user_default_permissions() {
   $permissions['delete own map content'] = array(
     'name' => 'delete own map content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -32,7 +32,7 @@ function humanitarianresponse_maps_user_default_permissions() {
   $permissions['edit own map content'] = array(
     'name' => 'edit own map content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
