@@ -1500,6 +1500,7 @@ function humanitarianresponse_maps_field_default_fields() {
   t('Theme(s)');
   t('Thumbnail');
   t('Title');
+  t('Upload preferably squared thumbnails');
 
   return $fields;
 }
