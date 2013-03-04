@@ -1243,7 +1243,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'label_position' => 'above',
           'repeat_collapsed' => 0,
           'text_parts' => array(),
-          'year_range' => '-3:+3',
+          'year_range' => '1975:+1',
         ),
         'type' => 'date_select',
         'weight' => '7',
