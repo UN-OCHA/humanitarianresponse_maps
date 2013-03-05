@@ -293,7 +293,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => '',
           ),
           'type' => 'image',
           'weight' => '8',
@@ -578,7 +578,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 20,
+          'weight' => '20',
         ),
         'ical' => array(
           'label' => 'above',
@@ -660,7 +660,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 21,
+          'weight' => '21',
         ),
         'ical' => array(
           'label' => 'above',
@@ -947,36 +947,23 @@ function humanitarianresponse_maps_field_default_fields() {
         'description_field' => 0,
         'entity_translation_sync' => FALSE,
         'file_directory' => '',
-        'file_extensions' => 'pdf jpg',
+        'file_extensions' => 'pdf',
         'max_filesize' => '',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'file',
+        'module' => 'pdf_to_image',
         'settings' => array(
-          'filefield_sources' => array(
-            'filefield_sources' => array(
-              'attach' => 0,
-              'clipboard' => 0,
-              'reference' => 0,
-              'remote' => 'remote',
-            ),
-            'source_attach' => array(
-              'absolute' => '0',
-              'attach_mode' => 'move',
-              'path' => 'file_attach',
-            ),
-            'source_imce' => array(
-              'imce_mode' => 0,
-            ),
-            'source_reference' => array(
-              'autocomplete' => '0',
-            ),
+          'pdf_to_image' => array(
+            'density' => '25x25',
+            'extra_args' => '',
+            'hide_imagefield' => 1,
+            'target_field' => 'field_doc_thumbnail',
           ),
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'file_generic',
+        'type' => 'pdf_to_image',
         'weight' => '4',
       ),
     ),
@@ -1197,7 +1184,7 @@ function humanitarianresponse_maps_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 19,
+          'weight' => '19',
         ),
         'ical' => array(
           'label' => 'above',
