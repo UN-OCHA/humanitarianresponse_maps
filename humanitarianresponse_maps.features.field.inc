@@ -84,7 +84,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '24',
+        'weight' => '26',
       ),
     ),
   );
@@ -246,6 +246,88 @@ function humanitarianresponse_maps_field_default_fields() {
         'settings' => array(),
         'type' => 'options_buttons',
         'weight' => '18',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-map-field_display_properties'.
+  $fields['node-map-field_display_properties'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_display_properties',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'display_properties',
+            'parent' => '0',
+          ),
+        ),
+        'entity_translation_sync' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'map',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 22,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_display_properties',
+      'label' => 'Properties',
+      'required' => 0,
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '23',
       ),
     ),
   );
@@ -691,7 +773,7 @@ function humanitarianresponse_maps_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '23',
+        'weight' => '24',
       ),
     ),
   );
@@ -785,7 +867,7 @@ function humanitarianresponse_maps_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '26',
+        'weight' => '28',
       ),
     ),
   );
@@ -1482,6 +1564,7 @@ function humanitarianresponse_maps_field_default_fields() {
   t('Map Type');
   t('Map file');
   t('Name');
+  t('Properties');
   t('Publication Date');
   t('Source');
   t('Theme(s)');
