@@ -13,9 +13,9 @@ function humanitarianresponse_maps_taxonomy_default_vocabularies() {
       'name' => 'Map types',
       'machine_name' => 'map_types',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '-6',
+      'weight' => -6,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
