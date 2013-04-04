@@ -43,47 +43,6 @@ function humanitarianresponse_maps_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_file_languages'
-  $field_bases['field_file_languages'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_file_languages',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'languagefield',
-    'settings' => array(
-      'enabled' => 1,
-      'entity_translation_sync' => FALSE,
-      'excluded_languages' => array(),
-      'format' => array(
-        'iso' => 0,
-        'name' => 'name',
-        'name_native' => 0,
-      ),
-      'groups' => '',
-      'include_native' => 0,
-      'languages' => array(
-        'ar' => 'ar',
-        'en' => 'en',
-        'es' => 'es',
-        'fr' => 'fr',
-        'ru' => 'ru',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'language_field',
-  );
-
   // Exported field_base: 'field_map_file'
   $field_bases['field_map_file'] = array(
     'active' => 1,

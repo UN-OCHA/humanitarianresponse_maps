@@ -55,7 +55,6 @@ features[feeds_tamper][] = csv_visuals-location-explode
 features[feeds_tamper][] = csv_visuals-source-explode
 features[feeds_tamper][] = csv_visuals-themes-explode
 features[field_base][] = field_doc_thumbnail
-features[field_base][] = field_file_languages
 features[field_base][] = field_map_file
 features[field_base][] = field_map_type
 features[field_instance][] = node-map-body
