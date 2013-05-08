@@ -35,6 +35,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = title
+dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_column_class
 dependencies[] = views_data_export
