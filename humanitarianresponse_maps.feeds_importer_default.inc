@@ -35,7 +35,7 @@ function humanitarianresponse_maps_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'map_types',
+        'bundle' => 'map_types',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
