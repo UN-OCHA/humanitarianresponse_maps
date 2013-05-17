@@ -117,6 +117,44 @@ function humanitarianresponse_maps_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'hs_config_taxonomy-map_types';
+  $strongarm->value = array(
+    'config_id' => 'taxonomy-map_types',
+    'save_lineage' => '0',
+    'enforce_deepest' => '1',
+    'resizable' => '0',
+    'level_labels' => array(
+      'status' => 0,
+      'labels' => array(
+        0 => '',
+        1 => '',
+      ),
+    ),
+    'dropbox' => array(
+      'status' => 0,
+      'title' => 'All selections',
+      'limit' => '0',
+      'reset_hs' => '1',
+    ),
+    'editability' => array(
+      'status' => 0,
+      'item_types' => array(
+        0 => '',
+        1 => '',
+      ),
+      'allowed_levels' => array(
+        0 => 1,
+        1 => 1,
+      ),
+      'allow_new_levels' => 0,
+      'max_levels' => '1',
+    ),
+  );
+  $export['hs_config_taxonomy-map_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_map';
   $strongarm->value = '0';
   $export['language_content_type_map'] = $strongarm;
