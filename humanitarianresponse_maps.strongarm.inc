@@ -102,6 +102,9 @@ function humanitarianresponse_maps_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'search' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
