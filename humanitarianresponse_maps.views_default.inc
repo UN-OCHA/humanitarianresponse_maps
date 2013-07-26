@@ -15,7 +15,7 @@ function humanitarianresponse_maps_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Visuals view';
+  $view->human_name = 'Visuals';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -141,163 +141,14 @@ function humanitarianresponse_maps_views_default_views() {
     'map' => 'map',
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'views_column_class';
-  $handler->display->display_options['style_options']['row_class'] = 'grid-4';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'map' => 'map',
-  );
-  /* Filter criterion: Content: Clusters (field_clusters) */
-  $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
-  $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator_id'] = 'field_clusters_tid_op';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Clusters';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator'] = 'field_clusters_tid_op';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
-  /* Filter criterion: Content: Map Type (field_map_type) */
-  $handler->display->display_options['filters']['field_map_type_tid']['id'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['table'] = 'field_data_field_map_type';
-  $handler->display->display_options['filters']['field_map_type_tid']['field'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['operator_id'] = 'field_map_type_tid_op';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['operator'] = 'field_map_type_tid_op';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['identifier'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_map_type_tid']['vocabulary'] = 'map_types';
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['path'] = 'visuals-data/visuals';
-
-  /* Display: Visuals Per Term */
-  $handler = $view->new_display('page', 'Visuals Per Term', 'page_3');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'views_column_class';
-  $handler->display->display_options['style_options']['row_class'] = 'grid-4';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Has taxonomy term ID */
-  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
-  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'ignore';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'map' => 'map',
-  );
-  /* Filter criterion: Content: Map Type (field_map_type) */
-  $handler->display->display_options['filters']['field_map_type_tid']['id'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['table'] = 'field_data_field_map_type';
-  $handler->display->display_options['filters']['field_map_type_tid']['field'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['operator_id'] = 'field_map_type_tid_op';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['operator'] = 'field_map_type_tid_op';
-  $handler->display->display_options['filters']['field_map_type_tid']['expose']['identifier'] = 'field_map_type_tid';
-  $handler->display->display_options['filters']['field_map_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_map_type_tid']['vocabulary'] = 'map_types';
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['operator'] = 'contains';
-  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Title';
-  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
-  $handler->display->display_options['path'] = 'taxonomy/term/%/visuals';
-  $handler->display->display_options['menu']['type'] = 'tab';
-  $handler->display->display_options['menu']['title'] = 'Visuals';
-  $handler->display->display_options['menu']['weight'] = '6';
-  $handler->display->display_options['menu']['context'] = 0;
-
-  /* Display: Block per term */
-  $handler = $view->new_display('block', 'Block per term', 'block_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['link_display'] = FALSE;
-  $handler->display->display_options['link_display'] = 'page_3';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Has taxonomy term ID */
-  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
-  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'ignore';
-  $handler->display->display_options['block_description'] = 'Maps per term';
-
-  /* Display: Home */
-  $handler = $view->new_display('block', 'Home', 'visuals_home');
+  /* Display: Latest Map */
+  $handler = $view->new_display('block', 'Latest Map', 'visuals_home');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Latest Map';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
+  $handler->display->display_options['link_url'] = 'search/type/map';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -330,108 +181,7 @@ function humanitarianresponse_maps_views_default_views() {
     'fallback_image_style' => 'grid_4_with_margin_normal',
     'image_link' => 'content',
   );
-  $handler->display->display_options['block_description'] = 'Home Map';
-
-  /* Display: XLS */
-  $handler = $view->new_display('views_data_export', 'XLS', 'xls');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_data_export_xls';
-  $handler->display->display_options['style_options']['provide_file'] = 1;
-  $handler->display->display_options['style_options']['filename'] = 'visuals.xls';
-  $handler->display->display_options['style_options']['parent_sort'] = 0;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
-  $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
-  $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
-  $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
-  /* Field: Content: Map Type */
-  $handler->display->display_options['fields']['field_map_type']['id'] = 'field_map_type';
-  $handler->display->display_options['fields']['field_map_type']['table'] = 'field_data_field_map_type';
-  $handler->display->display_options['fields']['field_map_type']['field'] = 'field_map_type';
-  $handler->display->display_options['fields']['field_map_type']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Map file */
-  $handler->display->display_options['fields']['field_map_file']['id'] = 'field_map_file';
-  $handler->display->display_options['fields']['field_map_file']['table'] = 'field_data_field_map_file';
-  $handler->display->display_options['fields']['field_map_file']['field'] = 'field_map_file';
-  $handler->display->display_options['fields']['field_map_file']['label'] = 'File';
-  $handler->display->display_options['fields']['field_map_file']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_map_file']['type'] = 'file_url_plain';
-  /* Field: Field: Language */
-  $handler->display->display_options['fields']['field_file_languages']['id'] = 'field_file_languages';
-  $handler->display->display_options['fields']['field_file_languages']['table'] = 'field_data_field_file_languages';
-  $handler->display->display_options['fields']['field_file_languages']['field'] = 'field_file_languages';
-  $handler->display->display_options['fields']['field_file_languages']['settings'] = array(
-    'format' => array(
-      'iso' => 'iso',
-      'name' => 0,
-      'name_native' => 0,
-    ),
-  );
-  $handler->display->display_options['fields']['field_file_languages']['delta_offset'] = '0';
-  /* Field: Content: Publication Date */
-  $handler->display->display_options['fields']['field_publication_date']['id'] = 'field_publication_date';
-  $handler->display->display_options['fields']['field_publication_date']['table'] = 'field_data_field_publication_date';
-  $handler->display->display_options['fields']['field_publication_date']['field'] = 'field_publication_date';
-  $handler->display->display_options['fields']['field_publication_date']['settings'] = array(
-    'format_type' => 'short',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-    'show_repeat_rule' => 'show',
-  );
-  /* Field: Field: Source */
-  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
-  $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
-  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
-  $handler->display->display_options['fields']['field_organizations']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_organizations']['delta_offset'] = '0';
-  /* Field: Field: Location */
-  $handler->display->display_options['fields']['field_locations']['id'] = 'field_locations';
-  $handler->display->display_options['fields']['field_locations']['table'] = 'field_data_field_locations';
-  $handler->display->display_options['fields']['field_locations']['field'] = 'field_locations';
-  $handler->display->display_options['fields']['field_locations']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_locations']['delta_offset'] = '0';
-  /* Field: Content: Clusters */
-  $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
-  /* Field: Content: Themes */
-  $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
-  $handler->display->display_options['fields']['field_themes']['table'] = 'field_data_field_themes';
-  $handler->display->display_options['fields']['field_themes']['field'] = 'field_themes';
-  $handler->display->display_options['fields']['field_themes']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_themes']['delta_offset'] = '0';
-  /* Field: Content: Coordination Hub */
-  $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
-  $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'field_data_field_coordination_hubs';
-  $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
-  $handler->display->display_options['fields']['field_coordination_hubs']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_coordination_hubs']['delta_offset'] = '0';
-  /* Field: Content: Emergencies */
-  $handler->display->display_options['fields']['field_emergencies']['id'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['table'] = 'field_data_field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_emergencies']['delta_offset'] = '0';
-  $handler->display->display_options['path'] = 'visuals-data/visuals.xls';
-  $handler->display->display_options['displays'] = array(
-    'page_1' => 'page_1',
-    'default' => 0,
-    'page_3' => 0,
-    'block_1' => 0,
-    'visuals_home' => 0,
-  );
+  $handler->display->display_options['block_description'] = 'Latest Map';
 
   /* Display: Featured Map per term */
   $handler = $view->new_display('block', 'Featured Map per term', 'block_2');
@@ -540,30 +290,11 @@ return $voc->machine_name;';
     t('next ›'),
     t('last »'),
     t('There are no visuals'),
-    t('Page'),
-    t('more'),
-    t('Clusters'),
-    t('Type'),
-    t('Title'),
-    t('Visuals Per Term'),
-    t('All'),
-    t('Block per term'),
-    t('Maps per term'),
-    t('Home'),
     t('Latest Map'),
-    t('Home Map'),
-    t('XLS'),
-    t('Map Type'),
-    t('File'),
-    t('Language'),
-    t('Publication Date'),
-    t('Source'),
-    t('Location'),
-    t('Themes'),
-    t('Coordination Hub'),
-    t('Emergencies'),
+    t('more'),
     t('Featured Map per term'),
     t('Featured Map'),
+    t('All'),
   );
   $export['maps_view'] = $view;
 
