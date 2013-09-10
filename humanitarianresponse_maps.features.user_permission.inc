@@ -10,7 +10,7 @@
 function humanitarianresponse_maps_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: create map content.
+  // Exported permission: 'create map content'.
   $permissions['create map content'] = array(
     'name' => 'create map content',
     'roles' => array(
@@ -19,7 +19,7 @@ function humanitarianresponse_maps_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own map content.
+  // Exported permission: 'delete own map content'.
   $permissions['delete own map content'] = array(
     'name' => 'delete own map content',
     'roles' => array(
@@ -28,7 +28,7 @@ function humanitarianresponse_maps_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own map content.
+  // Exported permission: 'edit own map content'.
   $permissions['edit own map content'] = array(
     'name' => 'edit own map content',
     'roles' => array(
