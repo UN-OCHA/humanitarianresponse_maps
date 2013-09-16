@@ -65,7 +65,6 @@ features[field_instance][] = node-map-field_doc_thumbnail
 features[field_instance][] = node-map-field_emergencies
 features[field_instance][] = node-map-field_file_languages
 features[field_instance][] = node-map-field_fundings
-features[field_instance][] = node-map-field_keywords
 features[field_instance][] = node-map-field_linked_resources
 features[field_instance][] = node-map-field_locations
 features[field_instance][] = node-map-field_map_file
