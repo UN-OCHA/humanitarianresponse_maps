@@ -181,8 +181,9 @@ function humanitarianresponse_maps_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_map';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_map'] = $strongarm;
 
@@ -206,6 +207,13 @@ function humanitarianresponse_maps_strongarm() {
   $strongarm->name = 'pathauto_node_map_pattern';
   $strongarm->value = 'visuals/[node:title]';
   $export['pathauto_node_map_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_map';
+  $strongarm->value = 'needs_review';
+  $export['workbench_moderation_default_state_map'] = $strongarm;
 
   return $export;
 }
