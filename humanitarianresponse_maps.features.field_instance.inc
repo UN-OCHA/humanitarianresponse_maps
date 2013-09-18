@@ -463,6 +463,52 @@ function humanitarianresponse_maps_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-map-field_local_themes'
+  $field_instances['node-map-field_local_themes'] = array(
+    'bundle' => 'map',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 23,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_local_themes',
+    'label' => 'Local Themes',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'node-map-field_locations'
   $field_instances['node-map-field_locations'] = array(
     'bundle' => 'map',
@@ -870,9 +916,9 @@ function humanitarianresponse_maps_field_default_field_instances() {
   t('Emergencies');
   t('Funding');
   t('If you can not find the proper type in this list, please contact your site manager.');
-  t('Keywords');
   t('Language(s)');
   t('Linked Resources');
+  t('Local Themes');
   t('Location');
   t('Map Type');
   t('Map file');
