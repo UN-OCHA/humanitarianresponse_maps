@@ -483,6 +483,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
           'taxonomy_term_link' => 0,
           'taxonomy_term_separator' => ', ',
         ),
+        'type' => 'ds_taxonomy_separator',
         'weight' => 23,
       ),
       'ical' => array(
@@ -520,7 +521,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
   // Exported field_instance: 'node-map-field_locations'
   $field_instances['node-map-field_locations'] = array(
     'bundle' => 'map',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -554,11 +555,11 @@ function humanitarianresponse_maps_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(
         'apply_chosen' => 1,
       ),
-      'type' => 'options_select',
+      'type' => 'taxonomy_hs',
       'weight' => 12,
     ),
   );
@@ -772,6 +773,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
+        'apply_chosen' => 0,
         'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'd/m/Y - H:i:s',
