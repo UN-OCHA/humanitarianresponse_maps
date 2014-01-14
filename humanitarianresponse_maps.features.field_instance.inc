@@ -107,7 +107,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
   // Exported field_instance: 'node-map-field_coordination_hubs'
   $field_instances['node-map-field_coordination_hubs'] = array(
     'bundle' => 'map',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -272,7 +272,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
   // Exported field_instance: 'node-map-field_emergencies'
   $field_instances['node-map-field_emergencies'] = array(
     'bundle' => 'map',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -366,7 +366,7 @@ function humanitarianresponse_maps_field_default_field_instances() {
   // Exported field_instance: 'node-map-field_fundings'
   $field_instances['node-map-field_fundings'] = array(
     'bundle' => 'map',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
